@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>Version</key>
+<string>1.3</string>
+<key>Extension Identifier</key>
+<string>com.devopsyturvy.sendtogist</string>
+<key>Actions</key>
+<array>
+<dict>
+	<key>After</key>
+	<string>copy-result</string>
+	<key>After</key>
+	<string>preview-result</string>       
+	<key>Title</key>
+	<string>Gist</string>
+	<key>Image File</key>
+	<string>octicon.png</string>
+	<key>Script Interpreter</key>
+    <string>/usr/bin/ruby</string>
+	<key>Shell Script File</key>
+	<string>sendtogist.rb</string>
+ </dict>	
+</array>
+<key>Options</key>
+<array>
+<dict>
+			<key>Option Identifier</key>
+			<string>extension</string>
+			<key>Option Label</key>
+			<string>Gist file extension</string>
+			<key>Option Type</key>
+			<string>multiple</string>
+			<key>Option Values</key>
+ 						 <array>
+								<string>txt</string>
+								<string>php</string>
+								<string>java</string>
+								<string>html</string>
+								<string>haskell</string>
+								<string>vim</string>
+								<string>c</string>
+								<string>sh</string>
+								<string>py</string>
+								<string>pl</string>
+								<string>rb</string>
+								<string>tcl</string>
+								<string>xml</string>
+								<string>sql</string>
+								<string>yaml</string>
+							</array>  
+			<key>Option Default Value</key>
+			<string>text</string>
+</dict>
+<dict>
+	<key>Option Identifier</key>
+	<string>token</string>
+	<key>Option Label</key>
+	<string>Git access token</string>
+	<key>Option Type</key>
+	<string>string</string>
+</dict>	
+<dict>
+	<key>Option Identifier</key>
+	<string>proxy</string>
+	<key>Option Label</key>
+	<string>Proxy url</string>
+	<key>Option Type</key>
+	<string>string</string>
+</dict>	
+<dict>
+	<key>Option Identifier</key>
+	<string>description</string>
+	<key>Option Label</key>
+	<string>Gist description</string>
+	<key>Option Type</key>
+	<string>string</string>
+	<key>Option Default Value</key>
+	<string>created with popclip send2gist extension</string>
+</dict>	
+<dict>
+	<key>Option Identifier</key>
+	<string>secret</string>
+	<key>Option Label</key>
+	<string>Secret gist</string>
+	<key>Option Type</key>
+	<string>boolean</string>
+	<key>Option Default Value</key>
+	<string>0</string>
+</dict>	
+<dict>
+	<key>Option Identifier</key>
+	<string>open</string>
+	<key>Option Label</key>
+	<string>Open gist in browser</string>
+	<key>Option Type</key>
+	<string>boolean</string>
+	<key>Option Default Value</key>
+	<string>1</string>
+</dict>	
+</array>
+<key>Extension Name</key>
+<string>SendToGist</string>
+<key>Required OS Version</key>
+<string>10.6.8</string>
+<key>Required Software Version</key>
+<string>701</string>
+</dict>
+</plist>
